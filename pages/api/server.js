@@ -5,19 +5,17 @@ export const getBlogs = async () => {
     query MyQuery {
         blog {
           id
-          slug
           title
           image {
             url
           }
-         
+          excerpt
           content {
             text
           }
+          slug
         }
       }
-      
-      
       
       
     `

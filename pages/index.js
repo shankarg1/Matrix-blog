@@ -15,7 +15,7 @@ export default function Home({ blogs }) {
           <figure><img src={blog.image.url} alt="Shoes" /></figure>
           <div className="card-body">
             <h2 className="card-title">{blog.title}</h2>
-            <p>{blog.excerpt}</p>
+            <p className='text-gray-300'>{blog.excerpt}</p>
             <div className="justify-end card-actions">
               <a href={blog.slug}>
                 <button className="btn btn-primary">Read More !</button></a>
