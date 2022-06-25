@@ -1,16 +1,16 @@
 
-
+<html data-theme="night"></html>
 import { getBlogs } from '../pages/api/server'
 export default function Home({ blogs }) {
 
 
   return (<>
-
-    <div className="grid content-start justify-center xl:grid-cols-3 lg:grid-cols-2 sm:ml-24">
+<div data-theme="night">
+    <div  className="grid content-start justify-center xl:grid-cols-3 lg:grid-cols-2 sm:ml-24">
 
       {blogs.map((blog) => (
 
-        <div className="my-10 duration-300 ease-in-out hover:shadow-xl hover:scale-105 card w-96 bg-base-100">
+        <div className="my-10 duration-300 ease-in-out bg-gray-800 hover:shadow-xl hover:scale-105 card w-96 bg-base-100">
 
           <figure><img src={blog.image.url} alt="Shoes" /></figure>
           <div className="card-body">
@@ -27,7 +27,9 @@ export default function Home({ blogs }) {
         </div>
       ))}
     </div>
+</div>
   </>
+  
   )
 
 }
