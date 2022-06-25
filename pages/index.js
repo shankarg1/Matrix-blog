@@ -10,7 +10,7 @@ export default function Home({ blogs }) {
 
       {blogs.map((blog) => (
 
-        <div className="my-10 duration-300 ease-in-out bg-gray-800 hover:shadow-xl hover:scale-105 card w-96 bg-base-100">
+        <div className="my-10 duration-300 ease-in-out bg-slate-700 hover:shadow-xl hover:scale-105 card w-96 bg-base-100">
 
           <figure><img src={blog.image.url} alt="Shoes" /></figure>
           <div className="card-body">
